@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Yusei Tomobe Portfolio</title>
+    <!--
+        旧URLからの転送専用ページ。
+        以前のポートフォリオは https://mm-c2g.github.io/mintmochi_motionportfolio_ver1.0/ にあり、
+        そのURLを書いたPDFを提出している。アカウント名を mm-g326 に変えたため、
+        組織 mm-c2g を作ってこの住所を取り直し、ここから新しいサイトへ送る。
+        例: /mintmochi_motionportfolio_ver1.0/work-detail.html?id=2511GZ1
+          → https://mm-g326.github.io/Portfolio/work-detail.html?id=2511GZ1
+        index.html と 404.html は同じ中身。
+    -->
+    <script>
+        (function () {
+            var NEW = 'https://mm-g326.github.io/Portfolio';
+            // 旧サイトの階層（/mintmochi_motionportfolio_ver1.0）を取り除き、残りをそのまま付け直す
+            var path = location.pathname.replace(/^\/mintmochi_motionportfolio_ver1\.0(?=\/|$)/i, '') || '/';
+            location.replace(NEW + path + location.search + location.hash);
+        })();
+    </script>
+    <!-- JavaScript が動かない環境向けの保険 -->
+    <meta http-equiv="refresh" content="0; url=https://mm-g326.github.io/Portfolio/">
+</head>
+
+<body>
+    <p><a href="https://mm-g326.github.io/Portfolio/">Yusei Tomobe Portfolio へ移動します</a></p>
+</body>
+
+</html>
